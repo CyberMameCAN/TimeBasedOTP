@@ -1,0 +1,21 @@
+[project]
+name = "totp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Toshiya Takeshita", email = "toshi@atbat.jp" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pillow>=13.0.0",
+    "pyotp>=2.10.0",
+    "qrcode>=8.2",
+]
+
+[project.scripts]
+totp = "totp:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"

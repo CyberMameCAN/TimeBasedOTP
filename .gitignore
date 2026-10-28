@@ -1,0 +1,26 @@
+# Pythonの仮想環境
+.venv/
+
+# Pythonのバイトコード・キャッシュ
+__pycache__/
+*.py[cod]
+
+# ビルド成果物
+build/
+dist/
+*.egg-info/
+
+# 共有秘密鍵・登録用QRコード
+/src/totp/maruhi/
+otp_qr.png
+
+# 環境変数・ローカルの秘密情報
+.env
+.env.*
+!.env.example
+
+# テスト・静的解析のキャッシュ（導入した場合）
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
